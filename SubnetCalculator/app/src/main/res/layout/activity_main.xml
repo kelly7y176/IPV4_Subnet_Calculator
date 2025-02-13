@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="Subnet Calculator"
+        android:textColor="#FAFAFA"
+        android:textColorLink="#FF9800" />
+
+    <EditText
+        android:id="@+id/ipAddressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Enter IP Address"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/subnetMaskInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Enter Subnet Mask"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_margin="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="About"
+        android:textColor="#B4B4B4"
+        android:textColorLink="#FFF7F7" />
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_margin="10dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Help"
+        android:textColor="#B4B4B4"
+        android:textColorLink="#FFF7F7" />
+</LinearLayout>
